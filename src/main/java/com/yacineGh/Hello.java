@@ -19,7 +19,7 @@ public class Hello {
 		lignePol.setPoint(0, new Point(1, 1));
 		lignePol.setPoint(1, new Point(3, 8));
 		lignePol.setPoint(2, new Point(0, 4));
-
+		lignePol.setPoint(3, new Point(2, 5));
 		System.out.println(lignePol);
 
 		Point points[] = new Point[] { new Point(1, 1), new Point(1, 1),
