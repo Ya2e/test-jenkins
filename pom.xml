@@ -45,7 +45,7 @@
                     <goals>pre-integration-test</goals>
                     <preparationGoals>package</preparationGoals>
                     <allowTimestampedSnapshots>true</allowTimestampedSnapshots>
-                    <tagNameFormat>@{project.version}</tagNameFormat>
+                    <tagNameFormat>1.0.0</tagNameFormat>
                     <remoteTagging>false</remoteTagging>
                 </configuration>
 	        </plugin>
