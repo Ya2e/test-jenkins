@@ -41,11 +41,18 @@
 		            <groupId>org.codehaus.mojo</groupId>
 		            <artifactId>versions-maven-plugin</artifactId>
 		            <version>2.1</version>
-		            <configuration>
-		                <includesList>com.codeyouneed</includesList>
-		                <generateBackupPoms>false</generateBackupPoms>
-		                <allowSnapshots>true</allowSnapshots>
-		            </configuration>
+		                <configuration>
+		                    <archive>
+		                        <manifest>
+		                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+		                            <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+		                            <mainClass>org.ghanem</mainClass>
+		                        </manifest>
+		                    </archive>
+		                    <descriptorRefs>
+		                        <descriptorRef>jar-with-dependencies</descriptorRef>
+		                    </descriptorRefs>
+                		</configuration>
 		        </plugin>
 			</plugins>
 		</pluginManagement>
