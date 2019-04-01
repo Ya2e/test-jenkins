@@ -46,9 +46,9 @@
                             <mainClass>org.ghanem</mainClass>
                         </manifest>
                     </archive>
-                    <descriptorRefs>
+               <!--      <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
-                    </descriptorRefs>
+                    </descriptorRefs> -->
                 </configuration>
                 <executions>
                     <execution>
