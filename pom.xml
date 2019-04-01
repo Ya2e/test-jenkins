@@ -24,46 +24,32 @@
         <version>1.6.1</version>
     </dependency>
 </dependencies>
+
+
+	<distributionManagement>
+		<repository>
+			<id>org</id>
+			<url>http://localhost:8081/nexus/releases/</url>
+		</repository>
+	</distributionManagement>
+	
 		
-           <build>
+	<build>
+    <pluginManagement>
         <plugins>
-            <plugin>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <version>3.0.0</version>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                            <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
-                            <mainClass>org.ghanem</mainClass>
-                        </manifest>
-                    </archive>
-                    <descriptorRefs>
-                        <descriptorRef>jar-with-dependencies</descriptorRef>
-                    </descriptorRefs>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-release-plugin</artifactId>
-                <version>2.5.3</version>
-                <configuration>
-                    <goals>pre-integration-test</goals>
-                    <preparationGoals>package</preparationGoals>
-                    <allowTimestampedSnapshots>true</allowTimestampedSnapshots>
-                    <tagNameFormat>@{project.version}</tagNameFormat>
-                    <remoteTagging>false</remoteTagging>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+	        <plugin>
+	            <groupId>org.codehaus.mojo</groupId>
+	            <artifactId>versions-maven-plugin</artifactId>
+	            <version>@{project.version}</version>
+	            <configuration>
+	                <includesList>org.ghanem</includesList>
+	                <generateBackupPoms>false</generateBackupPoms>
+	                <allowSnapshots>true</allowSnapshots>
+	            </configuration>
+	        </plugin>
+		</plugins>
+	</pluginManagement>
+	</build>
+      
        
 </project>
