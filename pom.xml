@@ -15,7 +15,6 @@
 	<developerConnection>scm:git:git@github.com:Ya2e/test-jenkins.git</developerConnection>
 	<url>https://github.com/Ya2e/test-jenkins.git</url>
 	<tag>@{project.version}</tag>
-	<!--<tag>@{project.version}</tag>-->
 </scm>
   
 <dependencies>
@@ -29,13 +28,12 @@
 
 	<distributionManagement>
 		<repository>
-			<id>org</id>
+			<id>admin</id>
 			<url>http://localhost:8081/nexus/releases/</url>
 		</repository>
 	</distributionManagement>
 	
-		
-	<build>
+    <build>
         <plugins>
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
