@@ -26,10 +26,13 @@
 </dependencies>
 
 
+
 	<distributionManagement>
 		<repository>
-			<url>http://localhost:8081/nexus[/releases]</url>
-		</repository>
+        	<id>nexus-releases</id>
+        	<name>releases</name>
+        	<url>http://localhost:8081/nexus</url>
+   		 </repository>
 	</distributionManagement>
 	
     <build>
