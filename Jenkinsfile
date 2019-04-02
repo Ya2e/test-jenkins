@@ -6,6 +6,14 @@ pipeline {
         jdk '1.8.0'
     }
     stages {
+        stage("clone code") {
+            steps {
+                script {
+                    // Let's clone the source
+                    git 'https://github.com/Ya2e/test-jenkins.git';
+                }
+            }
+        }
         stage('Build') {
             steps {
                 echo 'Building..'
