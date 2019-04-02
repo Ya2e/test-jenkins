@@ -44,7 +44,7 @@
                 		<version>2.5.3</version>
                 <configuration>
                    <tag>${project.artifactId}-${project.version}</tag>
-                   <allowSnapshots>true</allowSnapshots>
+                   	<!--<allowSnapshots>true</allowSnapshots>-->
                 </configuration>
             </plugin>
         </plugins>
