@@ -35,6 +35,7 @@
    		 </repository>
 	</distributionManagement>
 	
+	<!--  build -->
 	<build>
         <plugins>
             <plugin>
