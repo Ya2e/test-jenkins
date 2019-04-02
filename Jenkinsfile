@@ -33,6 +33,7 @@ pipeline {
             }
             steps {
                 sh 'mvn deploy'
+                credentialsId:'1726f219-79ab-44ce-ae8a-b4bb0d99878e'
             }
         }
     }

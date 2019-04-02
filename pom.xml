@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.ghanem</groupId>
   <artifactId>projet-maven</artifactId>
-  <version>0.0.3-SNAPSHOT</version>
+  <version>0.0.2-SNAPSHOT</version>
   <packaging>jar</packaging>
   
 <properties>
