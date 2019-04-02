@@ -32,7 +32,7 @@ pipeline {
               }
             }
             steps {
-                sh 'mvn deploy --batch-mode'
+                sh 'make publish'
             }
         }
     }
