@@ -5,9 +5,6 @@ pipeline {
         maven "3.10.0-957.1.3.el7.x86_64"
         jdk '1.8.0'
     }
-        environment {
-			NEXUS_CREDENTIAL_ID = credentials('1726f219-79ab-44ce-ae8a-b4bb0d99878e')
-		}
     stages {
             stage("clone code") {
             steps {
