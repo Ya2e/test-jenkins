@@ -6,18 +6,6 @@ pipeline {
         jdk '1.8.0'
     }
     stages {
-    //test de commit
-     	 stage('Check commit message') {
-		     when { changelog '.*\\[maven-release-plugin\\].*' }
-		     steps {
-		       script {
-		          pom = readMavenPom file: 'pom.xml'
-		          currentBuild.displayName = pom.version
-		          currentBuild.result = 'NOT_BUILT'
-		       }
-		       error('Skipping release build')
-		     }
-		}
         stage('Build') {
             steps {
                 echo 'Building..'
