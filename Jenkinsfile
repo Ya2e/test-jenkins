@@ -37,7 +37,7 @@ pipeline {
         }
         stage('Release') {
             steps {
-                echo 'Building..'
+                echo 'Release..'
                 sh 'mvn Release:prepare'
             }
         }
