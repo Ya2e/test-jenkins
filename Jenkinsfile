@@ -35,5 +35,11 @@ pipeline {
                 sh 'mvn deploy'
             }
         }
+        stage('Release') {
+            steps {
+                echo 'Building..'
+                sh 'mvn Release:prepare'
+            }
+        }
     }
 }
