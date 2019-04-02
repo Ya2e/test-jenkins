@@ -6,30 +6,25 @@ pipeline {
         jdk '1.8.0'
     }
     stages {
-        stage("clone code et clean") {
+            stage("clone code") {
             steps {
                 script {
                     // Let's clone the source
-                    sh 'git clone https://github.com/Ya2e/test-jenkins.git';
-                    sh 'mvn clean -f test-jenkins'
+                    git 'https://github.com/Ya2e/test-jenkins.git';
                 }
             }
         }
-        
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-                sh 'mvn -f test test-jenkins'
-            }
-        }
-        
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'mvn package'
+                sh 'mvn clean package -DskipTests'
             }
         }
-
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
         stage('Deploy') {
             when {
               expression {
