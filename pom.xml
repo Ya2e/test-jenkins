@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.ghanem</groupId>
   <artifactId>projet-maven</artifactId>
-  <version>0.0.3</version>
+  <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
   
 <properties>
@@ -34,11 +34,11 @@
         	<!-- <name>releases</name>-->
         	<url>http://localhost:8081/nexus/content/repositories/releases</url>
    		 </repository>
-  	<!--  	    <snapshotRepository>
-            <id>snapshots</id>
+  	    <snapshotRepository>
+            <id>nexus-snapshot</id>
             <name>Snapshots</name>
-            <url><my_url_to_my_snapshot_repo></url>
-        </snapshotRepository>-->
+            <url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
 	</distributionManagement>
 	
 	<!--  build -->
