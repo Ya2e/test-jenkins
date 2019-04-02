@@ -30,11 +30,11 @@
 
 
 	<distributionManagement>
-		<!-- <repository>
+		<!-- --><repository>
         	<id>localNexus</id>
         	 <name>releases</name>
         	<url>http://localhost:8081/nexus/content/repositories/releases</url>
-   		 </repository> -->
+   		 </repository> 
   	    <snapshotRepository>
             <id>nexus-snapshot</id>
             <name>Snapshots</name>
