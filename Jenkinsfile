@@ -24,7 +24,7 @@ pipeline {
               }
             }
             steps {
-                sh 'deploy'
+                sh 'mvn deploy --batch-mode'
             }
         }
     }
