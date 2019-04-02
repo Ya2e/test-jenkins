@@ -39,8 +39,8 @@
 	<build>
         <plugins>
             <plugin>
-                <artifactId>maven-scm-plugin</artifactId>
-                <version>1.9.5</version>
+             <!--    <artifactId>maven-scm-plugin</artifactId>
+                <version>1.9.5</version>--> 
                 <configuration>
                    <tag>${project.artifactId}-${project.version}</tag>
                 </configuration>
