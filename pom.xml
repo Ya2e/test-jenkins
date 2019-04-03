@@ -31,17 +31,43 @@
 
 	<distributionManagement>
 		<!-- --><repository>
-        	<id>localNexus</id>
+        	<id>yacine-nexus-release</id>
         	 <name>releases</name>
         	<url>http://localhost:8081/nexus/content/repositories/releases</url>
    		 </repository> 
   	    <snapshotRepository>
-            <id>nexus-snapshot</id>
+            <id>yacine-nexus-snapshot</id>
             <name>Snapshots</name>
             <url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
         </snapshotRepository>
 	</distributionManagement>
 	
+	<repositories>
+	    <repository>
+      <id>yacine-nexus-release</id>
+      <name>yacine</name>
+      <url>http://localhost:8081/nexus/content/repositories/releases</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>yacine-nexus-snapshot</id>
+      <name>yacine</name>
+      <url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+  
+  
 	<!--  build -->
 	<build>
         <plugins>
