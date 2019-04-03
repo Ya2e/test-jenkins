@@ -25,16 +25,7 @@ pipeline {
                 echo 'Testing..'
             }
         }
-        stage('Deploy') {
-            when {
-              expression {
-                currentBuild.result == null || currentBuild.result == 'SUCCESS' 
-              }
-            }
-            steps {
-                sh 'mvn deploy'
-            }
-        }
+
         stage('Release') {
             steps {
                 echo 'Release..'
