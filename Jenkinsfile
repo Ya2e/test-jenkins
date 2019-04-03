@@ -38,7 +38,7 @@ pipeline {
         stage('Release') {
             steps {
                 echo 'Release..'
-                sh 'mvn Release:prepare'
+                sh 'mvn -B release:clean release:prepare release:perform'
             }
         }
     }
