@@ -75,7 +75,7 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.5.3</version>
                 <configuration>
-					<tag>${project.artifactId}-${project.version}</tag>
+					<tag>v${project.version}</tag> <!-- ${project.artifactId}- -->
                    <allowSnapshots>true</allowSnapshots> 
                 </configuration>
             </plugin>
