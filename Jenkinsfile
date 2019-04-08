@@ -31,7 +31,7 @@ pipeline {
         stage('Release') {
             steps {
                 echo 'Release..'
-                sh 'mvn release:clean release:prepare release:perform -Dgoals=deploy' //-DtagNameFormat="@{version}"'  -Dusername=Ya2e -Dpassword=usmh0crb2'
+                sh 'mvn release:clean release:prepare release:perform -Dgoals=deploy -Dusername=Ya2e -Dpassword=usmh0crb2' //-DtagNameFormat="@{version}"'  -Dusername=Ya2e -Dpassword=usmh0crb2'
             }
         }
         
