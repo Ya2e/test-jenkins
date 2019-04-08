@@ -4,7 +4,7 @@
   <artifactId>projet-maven</artifactId>
   <!--<version>0.0.7</version>-->
   <version>0.0.6-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>pom</packaging>
   
 <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
