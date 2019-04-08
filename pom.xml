@@ -17,7 +17,7 @@
 	<!--  <connection>scm:git:git@github.com:Ya2e/test-jenkins.git</connection>-->
 	<developerConnection>scm:git:git@github.com:Ya2e/test-jenkins.git</developerConnection> 
 	<url>https://github.com/Ya2e/test-jenkins.git</url>
-	<tag>HEAD</tag>
+	<tag>@{project.version}.release</tag>
 </scm>
   
 <dependencies>
