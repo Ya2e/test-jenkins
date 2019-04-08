@@ -26,7 +26,16 @@ pipeline {
             }
         }
         
-        stage('Deploy') {
+
+        
+        stage('Release') {
+            steps {
+                echo 'Release..'
+                sh 'mvn release:clean release:prepare release:perform -Dgoals=deploy' //-DtagNameFormat="@{version}"'  -Dusername=Ya2e -Dpassword=usmh0crb2'
+            }
+        }
+        
+                stage('Deploy') {
             when {
               expression {
                 currentBuild.result == null || currentBuild.result == 'SUCCESS' 
@@ -34,13 +43,6 @@ pipeline {
             }
             steps {
                 sh 'mvn deploy'
-            }
-        }
-        
-        stage('Release') {
-            steps {
-                echo 'Release..'
-                sh 'mvn release:prepare release:perform' //-DtagNameFormat="@{version}"'  -Dusername=Ya2e -Dpassword=usmh0crb2'
             }
         }
         
