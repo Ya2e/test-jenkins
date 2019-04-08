@@ -41,8 +41,8 @@ pipeline {
             steps {
                 echo 'Release..'
                 //sh 'mvn release:prepare release:perform -Dusername=Ya2e -Dpassword=usmh0crb2' //-DtagNameFormat="@{version}"'  -Dusername=Ya2e -Dpassword=usmh0crb2'
-                sh "mvn -B clean release:prepare"
-                sh "mvn -B release:perform"                       
+                sh "mvn clean release:prepare -U"
+                sh "mvn release:perform -U"                       
             }
         }
         
