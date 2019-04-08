@@ -25,13 +25,6 @@ pipeline {
                 echo 'Testing..'
             }
         }
-
-        stage('Release') {
-            steps {
-                echo 'Release..'
-                sh 'mvn -batch-mode clean release:prepare release:perform' //-DtagNameFormat="@{version}"'  -Dusername=Ya2e -Dpassword=usmh0crb2'
-            }
-        }
         
         stage('Deploy') {
             when {
@@ -43,5 +36,14 @@ pipeline {
                 sh 'mvn deploy'
             }
         }
+        
+        stage('Release') {
+            steps {
+                echo 'Release..'
+                sh 'mvn release:prepare release:perform' //-DtagNameFormat="@{version}"'  -Dusername=Ya2e -Dpassword=usmh0crb2'
+            }
+        }
+        
+
     }
 }
