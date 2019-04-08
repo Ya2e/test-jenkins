@@ -17,7 +17,6 @@
 	<!--  <connection>scm:git:git@github.com:Ya2e/test-jenkins.git</connection>-->
 	<developerConnection>scm:git:git@github.com:Ya2e/test-jenkins.git</developerConnection> 
 	<url>https://github.com/Ya2e/test-jenkins.git</url>
-	<tag>@{project.version}.release</tag>
 </scm>
   
 <dependencies>
@@ -88,7 +87,7 @@
          	                <manifest>
 			                   <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
 			                </manifest>
-					<!--<tag>${project.artifactId}-${project.version}</tag>-->
+					   <tag>${project.artifactId}-${project.version}</tag>
                    <allowSnapshots>true</allowSnapshots> 
                 </configuration>
             </plugin>
