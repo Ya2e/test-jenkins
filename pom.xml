@@ -84,6 +84,9 @@
 					   </dependencies>
                 <configuration>
                 	<autoVersionSubmodules>true</autoVersionSubmodules>
+         	                <manifest>
+			                   <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+			                </manifest>
 					<!--<tag>${project.artifactId}-${project.version}</tag>-->
                    <allowSnapshots>true</allowSnapshots> 
                 </configuration>
