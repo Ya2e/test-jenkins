@@ -85,7 +85,7 @@
 					   </dependencies>
                 <configuration>
 					   <!--  <tag>${project.artifactId}-${project.version}</tag>-->
-					   <useReleaseProfile>false</useReleaseProfile>
+					  <tagNameFormat>v@{project.version}</tagNameFormat>
                 </configuration>
             </plugin>
         </plugins>
