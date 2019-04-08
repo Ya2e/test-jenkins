@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.ghanem</groupId>
   <artifactId>projet-maven</artifactId>
-  <version>0.0.1</version>
+  <!--<version>0.0.7</version>-->
    <!--  <version>0.0.6-SNAPSHOT</version>-->
   <packaging>jar</packaging>
   
@@ -10,7 +10,7 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <build.number>0.0.2-SNAPSHOT</build.number>
+    <build.number>0.0.7-SNAPSHOT</build.number>
 </properties>
 
 <scm>
