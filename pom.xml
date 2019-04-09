@@ -4,7 +4,7 @@
   <artifactId>projet-maven</artifactId>
   <!--<version>0.0.13</version>-->
   <version>0.0.13-SNAPSHOT</version>
-  <packaging>pom</packaging>
+  <packaging>jar</packaging>
   <name>mon_app</name>
  
 <properties>
