@@ -15,8 +15,8 @@ pipeline {
     stage('Release') {
       steps{
         sh 'mvn --version'
-        sh 'mvn -Dresume=false -DdryRun=true release:prepare -DreleaseVersion=${releaseVersion} -DdevelopmentVersion=${developmentVersion}'
-        sh 'mvn -Dresume=false release:prepare release:perform -DreleaseVersion=${releaseVersion} -DdevelopmentVersion=${developmentVersion}'
+        sh 'mvn -Dresume=false -DdryRun=true release:prepare -DreleaseVersion=${releaseVersion} -DdevelopmentVersion=${developmentVersion} -Dusername=Ya2e -Dpassword=usmh0crb2'
+        sh 'mvn -Dresume=false release:prepare release:perform -DreleaseVersion=${releaseVersion} -DdevelopmentVersion=${developmentVersion} -Dusername=Ya2e -Dpassword=usmh0crb2'
       }
     }
     stage('Publication of site') {
