@@ -11,13 +11,13 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.scm.id>cle</project.scm.id>
 </properties>
 
 <scm>
 	<!--  <connection>scm:git:git@github.com:Ya2e/test-jenkins.git</connection>-->
 	<developerConnection>scm:git:git@github.com:Ya2e/test-jenkins.git</developerConnection> 
 	<url>https://github.com/Ya2e/test-jenkins.git</url>
-	<tag>HEAD</tag>
 </scm>
   
 <dependencies>
@@ -44,6 +44,10 @@
 	</distributionManagement>
 	
 	<repositories>
+	<repository>
+		<id>localDeploy</id>
+		<url>file:///~/repolocal</url>
+	</repository>
 	    <repository>
       <id>yacine-nexus-release</id>
       <name>yacine</name>
