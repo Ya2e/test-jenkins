@@ -19,13 +19,13 @@ pipeline {
         sh 'mvn  release:perform'
       }
     }
-    stage('Publication of site') {
-      steps{
-        sh 'mvn --version'
-        sh 'git checkout ${releaseVersion}'
-        sh 'mvn clean install site site:stage scm-publish:publish-scm'
-      }
-    }
+ //   stage('Publication of site') {
+   //    steps{
+   //      sh 'mvn --version'
+    //     sh 'git checkout ${releaseVersion}'
+     //    sh 'mvn clean install site site:stage scm-publish:publish-scm'
+    //   }
+    // }
   }
 }
     
