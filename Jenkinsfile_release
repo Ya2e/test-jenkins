@@ -17,6 +17,7 @@ pipeline {
         sh 'mvn --version'
         sh 'mvn  release:prepare -U --batch-mode'
         sh 'mvn  release:prepare release:perform'
+        //test
       }
     }
     stage('Publication of site') {
