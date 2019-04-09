@@ -16,7 +16,7 @@ pipeline {
       steps{
         sh 'mvn --version'
         sh 'mvn -Dresume=false -DdryRun=true release:prepare -DreleaseVersion=${releaseVersion} -DdevelopmentVersion=${developmentVersion}'
-        sh 'mvn -Dresume=false release:prepare release:perform -DreleaseVersion=${releaseVersion} -DdevelopmentVersion=${developmentVersion}'
+        sh 'mvn -Dresume=false release:prepare-with-pom release:perform -DreleaseVersion=${releaseVersion} -DdevelopmentVersion=${developmentVersion}'
       }
     }
     stage('Publication of site') {
