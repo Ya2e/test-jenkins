@@ -88,7 +88,6 @@
 				   <!--  <tag>${project.artifactId}-${project.version}</tag>-->
 				      <tagNameFormat>v@{project.version}</tagNameFormat>
 					  <autoVersionSubmodules>true</autoVersionSubmodules>
-					  <releaseProfiles>releases</releaseProfiles>
 					  <skipTests>true</skipTests>
                </configuration>
            </plugin>
