@@ -3,7 +3,7 @@
   <groupId>org.ghanem</groupId>
   <artifactId>projet-maven</artifactId>
   <!--<version>0.0.13</version>-->
-  <version>0.0.13-SNAPSHOT</version>
+  <version>0.0.13</version>
   <packaging>jar</packaging>
   <name>mon_app</name>
  
@@ -18,7 +18,7 @@
 	<connection>scm:git:https://github.com/Ya2e/test-jenkins.git</connection>
 	<developerConnection>scm:git:https://github.com/Ya2e/test-jenkins.git</developerConnection> 
 	<url>https://github.com/Ya2e/test-jenkins.git</url>
-  <tag></tag>
+  <tag>v0.0.13</tag>
   </scm>
   
 <dependencies>
