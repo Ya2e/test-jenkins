@@ -3,7 +3,7 @@
   <groupId>org.ghanem</groupId>
   <artifactId>projet-maven</artifactId>
   <!--<version>0.0.7</version>-->
-  <version>0.0.8-SNAPSHOT</version>
+  <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>mon_app</name>
     
@@ -85,6 +85,9 @@
 					   </dependencies>
                 <configuration>
 					   <!--  <tag>${project.artifactId}-${project.version}</tag>-->
+					      <tagNameFormat>v@{project.version}</tagNameFormat>
+						  <autoVersionSubmodules>true</autoVersionSubmodules>
+						  <releaseProfiles>releases</releaseProfiles>
                 </configuration>
             </plugin>
         </plugins>
