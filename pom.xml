@@ -18,7 +18,7 @@
 	<connection>scm:git:https://github.com/Ya2e/test-jenkins.git</connection>
 	<developerConnection>scm:git:https://github.com/Ya2e/test-jenkins.git</developerConnection> 
 	<url>https://github.com/Ya2e/test-jenkins.git</url>
-  <tag>v0.0.1</tag>
+  <tag>v0.0.2</tag>
   </scm>
   
 <dependencies>
