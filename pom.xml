@@ -6,7 +6,7 @@
   <version>0.0.12-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>mon_app</name>
-    <!--commentaire de test-->
+ 
 <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
