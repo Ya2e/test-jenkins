@@ -15,7 +15,7 @@
 </properties>
 
 <scm>
-	<!--  <connection>scm:git:git@github.com:Ya2e/test-jenkins.git</connection>-->
+	<connection>scm:git:https://${env.GIT_USERNAME}:${env.GIT_PASSWORD}github.com/Ya2e/test-jenkins.git</connection>
 	<developerConnection>scm:git:git@github.com:Ya2e/test-jenkins.git</developerConnection> 
 	<url>https://github.com/Ya2e/test-jenkins.git</url>
 </scm>
