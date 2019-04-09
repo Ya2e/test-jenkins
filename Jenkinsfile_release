@@ -9,7 +9,7 @@ pipeline {
     stage('Preparation') {
       steps{
         deleteDir()
-        sh 'git clone git@github.com:Ya2e/test-jenkins.git .'
+        sh 'git clone https://github.com/Ya2e/test-jenkins.git .'
       }
     }
     stage('Release') {
