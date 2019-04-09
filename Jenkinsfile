@@ -37,12 +37,12 @@ pipeline {
             }
         }
         
-        stage('Release') {
-            steps {
-                echo 'Release..'
-                sh 'mvn release:prepare release:perform' //-DtagNameFormat="@{version}"'  -Dusername=Ya2e -Dpassword=usmh0crb2'                      
-            }
-        }
+    //    stage('Release') {
+     //       steps {
+     //           echo 'Release..'
+    //            sh 'mvn release:prepare release:perform' //-DtagNameFormat="@{version}"'  -Dusername=Ya2e -Dpassword=usmh0crb2'                      
+      //      }
+     //   }
         
 
         
