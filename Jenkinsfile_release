@@ -14,11 +14,9 @@ pipeline {
     }
     stage('Release') {
       steps{
-      	withMaven(mavenSettingsConfig: '/usr/share/maven/conf/settings.xml'){
         sh 'mvn --version'
         sh 'mvn  release:prepare -U --batch-mode'
         sh 'mvn  release:perform -U'
-        }
       }
     }
   }
