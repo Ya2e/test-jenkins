@@ -20,10 +20,11 @@ pipeline {
                 sh 'mvn clean install package -DskipTests'
             }
         }
+    }
 			post ('Generate Dar'){
 			always {  
 			xldCreatePackage artifactsPath: '/target', manifestPath: 'deployit-manifest.xml', darPath: '$JOB_NAME-$BUILD_NUMBER.0.dar'  
 			}	
 		} 
-    }
+    
 }
