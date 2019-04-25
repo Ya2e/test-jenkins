@@ -2,7 +2,7 @@
 <udm.DeploymentPackage version="1.0.0" application="mon_app">
  <application ></application>
  <deployables>
-  <jee.Jar name="/monApp" file="/target/projet-maven-0.0.17-SNAPSHOT.jar"/>
+  <jee.Jar name="/monApp" file="/projet-maven-0.0.17-SNAPSHOT.jar"/>
  <dependencyResolution>LATEST</dependencyResolution>
  <undeployDependencies>false</undeployDependencies>
  </deployables>
