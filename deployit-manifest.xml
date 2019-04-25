@@ -1,8 +1,9 @@
- <?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <udm.DeploymentPackage version="1.0.0" application="mon_app">
- <application />
+ <application ></application>
  <deployables>
   <jee.Jar name="/monApp" file="/target/projet-maven-0.0.17-SNAPSHOT.jar"/>
  <dependencyResolution>LATEST</dependencyResolution>
  <undeployDependencies>false</undeployDependencies>
+ </deployables>
 </udm.DeploymentPackage>
