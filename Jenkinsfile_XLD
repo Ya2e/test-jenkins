@@ -20,8 +20,10 @@ pipeline {
                 sh 'mvn clean install package -DskipTests'
             }
         }
-			stage('Package') {  
+			stage('Package') {
+			 steps {  
 			xldCreatePackage artifactsPath: '/target', manifestPath: 'deployit-manifest.xml', darPath: '$JOB_NAME-$BUILD_NUMBER.0.dar'  
+			}	
 		} 
     }
 }
